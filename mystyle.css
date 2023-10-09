@@ -76,14 +76,14 @@ main {
 
 .hero--1 {
   max-width: 120rem;
-  display: flex;
   margin-bottom: 5rem;
-  padding-left: 7rem;
+  padding: 0rem 2rem;
 }
 
 .hero--container {
+  max-width: 110rem;
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
 .img-container {
@@ -92,6 +92,7 @@ main {
 
 .hero-img {
   width: 29.198125rem;
+  display: inline-block;
 }
 .hero--1-text-container {
   width: 34.985rem;
@@ -133,7 +134,28 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
+.left {
+  position: absolute;
+  top: 10rem;
+  left: 3rem;
+  padding: 1rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #ee3524, #f47b20);
+  cursor: pointer;
+}
+
+.right {
+  position: absolute;
+  right: 3rem;
+  top: 10rem;
+  padding: 1rem;
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #ee3524, #f47b20);
+  border-radius: 50%;
+}
+
 .img-and-text {
   text-align: center;
   margin-bottom: 5rem;
@@ -172,12 +194,16 @@ span {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 4rem;
+  position: relative;
+  margin-bottom: 10rem;
 }
+
 .testimonial-card {
   display: flex;
   align-items: start;
   gap: 1rem;
+  margin: 0 2.5rem;
 }
 .name {
   font-size: 1.375rem;
@@ -192,5 +218,36 @@ span {
 
 .comment {
   font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* END 
+------------------*/
+.section--1 {
+  max-width: 120rem;
+  padding: 2rem;
+}
+
+.container--1 {
+  max-width: 110rem;
+}
+
+.text-out {
+  font-size: 3.375rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.ul-list {
+  list-style: none;
+}
+
+.li-img {
+  width: 2rem;
+  height: auto;
+}
+
+.li-text {
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
